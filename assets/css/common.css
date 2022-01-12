@@ -1,0 +1,312 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+/*----------------navbar-----------------------*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background: #f5f5f5;
+    padding: 5px 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+   color: #000;
+    text-decoration: none;
+}
+
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu li a{
+    display: block;
+    
+}
+
+.logo a{
+    font-size: 20px;
+}
+
+.button.secondary{
+    border-bottom: 1px #FF725E solid;
+}
+
+.item.button.login a{
+
+   color:#FF725E;
+
+}
+
+.button.secondary a{
+    color: #FF725E;
+}
+
+
+
+/* mobile menu */
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle{
+    order:1;
+}
+
+
+
+.item.button{
+    order: 2;
+}
+
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+
+.toggle{
+
+   cursor: pointer;
+
+}
+
+.bars{
+    background: #000;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+
+}
+
+.bars::before,.bars::after{
+    background: #000;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before{
+    top: 5px;
+}
+
+.bars::after{
+    top: -5px;
+}
+
+/* tablet menu */
+
+@media all and (min-width:468px){
+
+   .menu{
+       justify-content: center;
+   }
+
+   .logo{
+       flex: 1;
+   }
+
+   .item.button{
+       width: auto;
+       order: 1;
+       display: block;
+   }
+
+   .toggle{
+       order: 2;
+   }
+
+   .button.secondary{
+       border: 0;
+   }
+
+   .button a{
+       padding: 7px 15px;
+       background: #FFf;
+      
+       border-radius: 50em;
+   }
+
+   .button.secondary a{
+       background: transparent;
+       border: 1px solid #FF725E;
+   }
+
+   .button a:hover{
+       transition: all .25s;
+      
+   }
+
+  
+
+   .button:not(.secondary) a:hover{
+       background: #fff;
+       border-color: #FF725E;
+   }
+
+   .button.secondary a:hover{
+       color: #FF725E;
+   }
+
+}
+
+@media all and (min-width:768px){
+    .item{
+        display: block;
+        width: auto;
+    }
+
+    .toggle{
+        display: none;
+    }
+
+    .logo{
+        order: 0;
+    }
+
+    .item{
+        order: 1;
+    }
+
+    .button{
+        order:2;
+    }
+
+    .menu li{
+        padding: 15px 10px;
+    }
+
+    .menu li.button{
+        padding-right: 0;
+    }
+}
+
+
+/* language */
+
+.language{
+   position: relative;
+   width: 120px;
+   margin-left: 40px;
+   font-weight: bold;
+}
+
+.language-select{
+   display: flex;
+   align-items: center;
+   color: #000;
+   cursor: pointer;
+}
+
+
+.language ul{
+   position: absolute;
+   width: 170px;
+   background-color: #fff;
+   border: 1px solid #f8f8f8;
+   padding-top: 10px;
+   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+   
+   display: none;
+}
+
+.language ul li{
+   list-style: none;
+}
+
+.language ul li a{
+   display: block;
+   color: #252525;
+   padding-top: 5px 10px;
+}
+
+.language ul li:hover{
+   background-color: #f8f8f8;
+}
+
+
+
+
+
+.language:hover ul{
+   display: block;
+}
+
+
+/*--------------------footer-----------------*/
+
+footer {
+    padding: 30px 0px;
+    border-top: 2px solid #FF725E;
+    background-color: #F5F5F5;
+}
+
+.footer-icon, .footer-link, .social-icon {
+    padding-top: 10px;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+}
+
+.social-icon h6 {
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 5px;
+    color: #343F52;
+}
+
+.social-icon > a > i {
+    font-size: 1em;
+    font-weight: 600;
+    padding: 5px;
+    color: #FF725E;
+}
+
+.social-icon > a > i:hover {
+    color: #603813;
+}
+
+.footer-link a {
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-left: 12px;
+    color: #343F52;
+}
+
+#copyright {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.75em;
+    padding-top: 10px;
+}
