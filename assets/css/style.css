@@ -9,6 +9,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    list-style-type: none;
+    height: 100vh;
+}
+
 html { font-size: 16px; }
 
 img {
@@ -16,6 +21,64 @@ img {
     height: auto;
 }
 
-main {
-    height: 600px;
+
+.content{
+    height: 400px;
+
 }
+
+
+.upload{
+    height: 400px;
+}
+
+.compress{
+    height: 400px;
+}
+
+.drop{
+    font-size: 5rem;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  
+}
+
+.icon li a i{
+    font-size: 30px;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: none;
+
+}
+
+.compress-file{
+    height: 300px;
+    padding: 20px;
+    border: 2px dotted;
+}
+
+[class*="col"]{
+    padding: 1rem;
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+  }
+
+  [class*="con"]{
+    padding: 1rem;
+   
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+  }
+
+section {
+    padding: 7rem 0;
+    overflow: hidden;
+  }

@@ -1,80 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>File Converter</title>
 </head>
-    <body>
-        <header>
-            <!----------------navbar------------------->
 
-            <nav class="nav-menu">
-                <ul class="menu">
-        
-                    <li class="logo"><a href="#"><img src="./assets/images/logo.png" id="logo" alt="logo"></a></li>
-        
-                    <div class="language">
-                        <div class="language-select">
-                            eng-us
-                        </div>
-        
-                        <ul>
-                            <li> <a href="#" class="br">portugues</a></li>
-                            <li><a href="#" class="bd">English</a></li>
-                            <li><a href="#" class="es">Espanol</a></li>
-        
-        
-                        </ul>
+<body>
+    <header>
+        <!----------------navbar------------------->
+
+        <nav class="nav-menu">
+            <ul class="menu">
+
+                <li class="logo"><a href="#"><img src="./assets/images/logo.png" id="logo" alt="logo"></a></li>
+
+                <div class="language">
+                    <div class="language-select">
+                        eng-us
                     </div>
-        
-        
-                    <li class="item"> <a href="#">Converter</a></li>
-                    <li class="item"><a href="#">How to</a></li>
-                    <li class="item"><a href="#">Help</a></li>
-                    <li class="item button login"><a href="#">Login</a></li>
-                    <li class="item button secondary "><a href="#">Sing up</a></li>
-                    <li class="toggle" ><a href="#"><span class="bars"></span></a></li>
-        
-                </ul>
-        
+
+                    <ul>
+                        <li> <a href="#" class="br">portugues</a></li>
+                        <li><a href="#" class="bd">English</a></li>
+                        <li><a href="#" class="es">Espanol</a></li>
+
+
+                    </ul>
+                </div>
+
+
+                <li class="item"> <a href="#">Converter</a></li>
+                <li class="item"><a href="#">How to</a></li>
+                <li class="item"><a href="#">Help</a></li>
+                <li class="item button login"><a href="#">Login</a></li>
+                <li class="item button secondary "><a href="#">Sing up</a></li>
+                <li class="toggle"><a href="#"><span class="bars"></span></a></li>
+
+            </ul>
+
+
+
+        </nav>
+
+
+    </header>
+
+    <section>
+
+        <div class="container-md px-4 content">
+            <div class="row gx-5">
+                <div class="col-md-3 upload"> 
+
+                    <p>Drop file Here</p>
+
+                    <div class="drop">
+                     
+                        <i class="fas fa-cloud-upload-alt"></i>
             
-        
-            </nav>
-
-
-        </header>
-        <main>
-
-        </main>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="footer-icon col-12 col-md-4 align-self-center">
-                        <a href="#"><img src="./assets/images/logo.png" id="logo" alt="logo"></a> <span>File Converter</span>
                     </div>
-                    <div class="social-icon col-12 col-md-4 text-center">
-                        <h6>Follow Us</h6>
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.instagram.com/?hl=en"><i class="fab fa-pinterest"></i></a>
-                    </div>
-                    <div class="footer-link col-12 col-md-4 text-end">
-                        <a href="#">Terms of Use</a>
-                        <a href="#">Privacy policy</a>
-                        <a href="#">Contact Us</a>
-                        <span id="copyright">Copyright@2022. All right reserved.</span>
+                    <button type="button" class="btn btn-primary">choose file</button>  
+                    
+                    <div class="icon">
+                        <li><a href=""><i class="fas fa-link"></i></a></li>
+                        <li><a href=""><i class="fab fa-dropbox"></i></a></li>
+                        <li> <a href=""><i class="fab fa-google-drive"></i></a></li>
                     </div>
                 </div>
+                <div class="col-md-6  d-flex align-items-center justify-content-center">
+                    <div class="p-3 border text-align-center"> custom column padding</div>
+                </div>
+                <div class="col-md-3 compress">
+
+                    <div class="compress-file">
+
+                    </div>
+
+                   
+
+                    <button type="button" class="btn btn-primary mt-3">compress</button>
+                </div>
             </div>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./assets/js/main.js"></script>
-    </body>
+        </div>
+        <div class="container px-4">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3 border"> custom column padding</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-icon col-12 col-md-4 align-self-center">
+                    <a href="#"><img src="./assets/images/logo.png" id="logo" alt="logo"></a> <span>File
+                        Converter</span>
+                </div>
+                <div class="social-icon col-12 col-md-4 text-center">
+                    <h6>Follow Us</h6>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/?hl=en"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <div class="footer-link col-12 col-md-4 text-end">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Contact Us</a>
+                    <span id="copyright">Copyright@2022. All right reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
