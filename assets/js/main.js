@@ -13,3 +13,18 @@ $(function(){
 })
 
 
+//range
+
+const sliderValue = document.querySelector(".val");
+        const inputslider = document.querySelector("input");
+
+        inputslider.oninput=(()=>{
+            let value = inputslider.value;
+            sliderValue.textContent=value;
+            sliderValue.style.left = (value/2) + "%";
+            sliderValue.classList.add("show")
+        });
+
+        inputslider.onblur = (()=>{
+            sliderValue.classList.remove("show")
+        })

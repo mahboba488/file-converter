@@ -55,9 +55,9 @@
 
     <section>
 
-        <div class="container-md px-4 content">
-            <div class="row gx-5">
-                <div class="col-md-3 upload"> 
+        <div class="container-md p-5 content">
+            <div class="row gx-5 mt-5">
+                <div class="col-md-3 upload ms-0"> 
 
                     <p>Drop file Here</p>
 
@@ -66,7 +66,7 @@
                         <i class="fas fa-cloud-upload-alt"></i>
             
                     </div>
-                    <button type="button" class="btn btn-primary">choose file</button>  
+                    <button type="button" class="btn btn-primary choose-file">choose file</button>  
                     
                     <div class="icon">
                         <li><a href=""><i class="fas fa-link"></i></a></li>
@@ -74,8 +74,27 @@
                         <li> <a href=""><i class="fab fa-google-drive"></i></a></li>
                     </div>
                 </div>
-                <div class="col-md-6  d-flex align-items-center justify-content-center">
-                    <div class="p-3 border text-align-center"> custom column padding</div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="p-3 lavel-rang text-align-center">
+                        <p class="lavel">Compress Level</p>
+                        <div class="range">
+                            <div class="sliderValue">
+                                <span class="val">100</span>
+                    
+                            </div>
+                    
+                            <div class="field">
+                                <div class="value left"> 0
+                    
+                                </div>
+                    
+                                <input type="range" min="0" max="200" value="100" steps="1">
+                    
+                                <div class="value right">200</div>
+                    
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3 compress">
 
@@ -85,17 +104,25 @@
 
                    
 
-                    <button type="button" class="btn btn-primary mt-3">compress</button>
+                    <button type="button" class="btn btn-primary mt-4">compress</button>
                 </div>
             </div>
-        </div>
-        <div class="container px-4">
-            <div class="row gx-5">
+
+            <div class="row gx-5 ">
+                <div class="col">
+                    <button type="button" class="btn btn-success mt-5"> <i class="fas fa-cloud-download-alt"></i> Download</button>
+       
+                    <div class="p-3 r"></div>
+                </div>
+            </div>
+
+            <div class="row gx-5 mt-5">
                 <div class="col">
                     <div class="p-3 border"> custom column padding</div>
                 </div>
             </div>
         </div>
+    
     </section>
     <footer>
         <div class="container">
