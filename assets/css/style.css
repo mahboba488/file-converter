@@ -22,6 +22,13 @@ img {
 }
 
 
+/*----------------main content--------------------*/
+
+.heading span{
+    color: #FF725E;
+    font-weight: 600;
+}
+
 .content{
 
   background: #f1f1f1;
@@ -46,7 +53,7 @@ img {
 
 .upload p{
     color: #fff;
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 .btn-primary {
@@ -54,18 +61,15 @@ img {
     background-color: #FF725E;
     border-color: #FF725E;
     padding: 10px;
-    width: 70%;
+    width: 40%;
     transition: 0.3s;
+    padding: 15px;
+    font-size: 1.5rem;
+    
 }
 
 
-.btn-outline-info {
-    color: #FF725E;
-    border-color: #FF725E;
-    padding: 17px;
-    width: 20%;
 
-}
 
 .btn-outline-info:hover{
     color: #fff;
@@ -89,7 +93,7 @@ img {
 }
 
  .btn-success{
-     width: 30%;
+     width: 50%;
      padding: 20px;
      font-size: 1.8rem;
      letter-spacing: 2px;
@@ -123,7 +127,7 @@ img {
     border: 2px dashed #fff;
 }
 .compress{
-    height: 400px;
+    height: 420px;
 
     
     
@@ -145,7 +149,7 @@ img {
 .icon{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: auto;
   
 }
 
@@ -158,8 +162,12 @@ img {
 
 }
 
+.icon li a i:hover{
+    color: #ff4e37;
+}
+
 .compress-file{
-    height: 300px;
+    height: 290px;
     padding: 20px;
     
 }
@@ -188,7 +196,7 @@ section {
 
 .range{
     height: 80px;
-    width: 550px;
+    width: 600px;
     background: #fff;
     border-radius: 10px;
     padding: 0 65px 0 45px;
@@ -482,3 +490,25 @@ ul li:last-child .fa::after{
     height: auto;
 
 }
+
+
+
+/* responsive*/
+
+
+@media (max-width: 850px){
+
+}
+
+
+@media (max-width: 600px) {
+
+   
+   
+  }
+  
+  @media (max-width: 560px) {
+
+
+  }
+  
