@@ -89,9 +89,9 @@ img {
 }
 
  .btn-success{
-     width: 50%;
+     width: 30%;
      padding: 20px;
-     font-size: 1.5rem;
+     font-size: 1.8rem;
      letter-spacing: 2px;
      font-weight: 500;
     background: #fff;
@@ -188,11 +188,12 @@ section {
 
 .range{
     height: 80px;
-    width: 380px;
+    width: 550px;
     background: #fff;
     border-radius: 10px;
     padding: 0 65px 0 45px;
 }
+
 
 .range .sliderValue{
     position: relative;
@@ -277,4 +278,207 @@ section {
     border-radius: 50%;
     border: 1px solid #FF725E;
     cursor: pointer;
+}
+
+
+/*------------------------- progess----------------*/
+
+.step-bar{
+    color: #FF725E;
+
+}
+
+.step-bar h3{
+    color: #000;
+}
+
+.progess{
+    height: auto;
+    
+    
+    margin: 100px auto;
+}
+
+.border {
+    border: 1px solid #ff4e37!important;
+}
+
+.progess img{
+    width: 80px;
+    margin-bottom: 10px;
+    
+}
+
+.progess ul{
+    text-align: center;
+}
+
+.progess ul li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+
+
+
+.progess ul li .fa{
+    background: #ccc;
+    width: 25px;
+    height: 27px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+
+    
+}
+
+.progess ul li .fa::after{
+    content: '';
+    background: #ccc;
+    height: 5px;
+    width: 205px;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+ul li:nth-child(3) .fa{
+    background: #148e14;
+}
+
+ul li:nth-child(3) .fa::after{
+    background: #148e14;
+}
+
+ul li:nth-child(1) .fa,
+ul li:nth-child(2) .fa{
+
+    background: #60aa97;
+
+}
+
+ul li:nth-child(2) .fa::after{
+    background: #60aa97;
+}
+
+ul li:nth-child(1) .fa::after{
+    background: #60aa97;
+}
+
+ul li:first-child .fa::after{
+    width: 100px;
+    left: 105px;
+   
+}
+
+ul li:last-child .fa::after{
+    width: 100px;
+}
+
+/*------------------------------question----------------------*/
+.wrapper{
+    width: 500px;
+    margin: 80px auto 0;
+    background: #f5f5f5;
+}
+
+.wrapper .accordio_wrap .accordio-header{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    padding: 15px;
+    color: #FF725E;
+    font-weight: 700;
+    border-bottom: 2px solid #FF725E ;
+    position: relative;
+    cursor: pointer;
+}
+
+.wrapper .accordio_wrap:first-child .accordio-header{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.wrapper .accordio_wrap:last-child .accordio-header{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom: 2px solid transparent;
+}
+
+.wrapper .accordio_wrap .accordio-header:hover{
+    color: #ff4e37;
+    border-color: #ff4e37;
+
+}
+
+.wrapper .accordio_wrap:last-child .accordio-header:hover{
+
+    border-bottom: 2px solid transparent;
+
+}
+
+.wrapper .accordio_wrap .accordio-header:before,
+.wrapper .accordio_wrap .accordio-header:after
+{
+    content: '';
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 20px;
+    height: 2px;
+    background: #FF725E;
+}
+
+.wrapper .accordio_wrap .accordio-header:after{
+    transform: rotate(90deg);
+    transition: all 0.5s ease;
+}
+
+.wrapper .accordio_wrap .Accordion_body{
+
+    width: 100%;
+    height: 0px;
+    transition: all 0.5s ease;
+    background: transparent;
+   
+    overflow: hidden
+}
+
+.wrapper .accordio_wrap .Accordion_body p{
+
+    padding: 15px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+
+}
+
+.wrapper .accordio_wrap .accordio-header.active{
+    color: #ff4e37;
+    border-color: #ff4e37;
+
+}
+
+.wrapper .accordio_wrap:last-child .accordio-header.active{
+    border-bottom: 2px solid  #ff4e37;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+.wrapper .accordio_wrap .accordio-header.active:before,
+.wrapper .accordio_wrap .accordio-header.active:after{
+    background: #FF725E;
+}
+
+.wrapper .accordio_wrap .accordio-header.active:after{
+    transform: rotate(0);
+}
+
+.wrapper .accordio_wrap .accordio-header.active + .Accordion_body{
+
+    height: auto;
+
 }

@@ -28,3 +28,14 @@ const sliderValue = document.querySelector(".val");
         inputslider.onblur = (()=>{
             sliderValue.classList.remove("show")
         })
+
+
+//question
+
+$(document).ready(function(){
+    $(".accordio-header").click(function(){
+
+        $(".accordio-header").removeClass("active")
+        $(this).addClass("active");
+    })
+})
