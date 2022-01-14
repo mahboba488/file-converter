@@ -21,6 +21,11 @@ img {
     height: auto;
 }
 
+h1, h4, h5, h6 {
+    font-weight: 800;
+    color: rgba(41, 12, 78, 0.8);
+}
+
 
 /*----------------main content--------------------*/
 
@@ -30,46 +35,31 @@ img {
 }
 
 .content{
-
   background: #f1f1f1;
-
-    box-shadow:  0 0 0 15px #f5f5f5;
-   
-    
-
+  box-shadow:  0 0 0 15px #f5f5f5;  
 }
-
-
 .upload{
-    height: 400px;
-    
+    height: 420px;    
     text-transform: uppercase;
     text-shadow: 0 2px 10px #f5d6d2;
     background: radial-gradient(#f5eeed,#facec9);
     border: 2px dashed #fff;
-    box-shadow: 0 0 0 10px #f5c6bf, 0 0 0 15px #f5d6d2;
-    
+    box-shadow: 0 0 0 10px #f5c6bf, 0 0 0 15px #f5d6d2;   
 }
-
 .upload p{
     color: #fff;
     font-size: 2rem;
 }
-
 .btn-primary {
     color: #fff;
     background-color: #FF725E;
     border-color: #FF725E;
     padding: 10px;
-    width: 40%;
+    width: 20%;
     transition: 0.3s;
     padding: 15px;
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;   
 }
-
-
-
 
 .btn-outline-info:hover{
     color: #fff;
@@ -77,14 +67,11 @@ img {
     border-color: #ff4e37;
 }
 
-
-
 .btn-info:hover{
     color: #fff;
     
     background: linear-gradient(140deg, rgba(248,33,3,1) 0%, rgba(246,51,26,1) 48%, rgba(248,33,3,1) 100%);
     border-color: #FF725E;
-
 }
 
 .btn-primary:hover{
@@ -93,7 +80,7 @@ img {
 }
 
  .btn-success{
-     width: 50%;
+     width: 30%;
      padding: 20px;
      font-size: 1.8rem;
      letter-spacing: 2px;
@@ -103,8 +90,7 @@ img {
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
     10px 10px 15px rgba(70, 70, 70, 0.12);
     border: 2px solid #f5f5f5;
-    outline: none;
-   
+    outline: none; 
 }
 
 .btn-success:hover{
@@ -117,25 +103,15 @@ img {
     inset -10px -10px 15px rgba(255,255,255,0.5),
     inset 10px 10px 15px rgba(70,70,70,0.12);
     transition: 0.3s ;
-
 }
-
-
-
 
 .compress-file{
     border: 2px dashed #fff;
 }
 .compress{
-    height: 420px;
-
-    
-    
+    height: 420px;      
     background: radial-gradient(#f5eeed,#facec9);
-  
-    box-shadow: 0 0 0 10px #f5c6bf, 0 0 0 15px #f5d6d2;
-    
-   
+    box-shadow: 0 0 0 10px #f5c6bf, 0 0 0 15px #f5d6d2;  
 }
 
 .drop{
@@ -150,7 +126,12 @@ img {
     display: flex;
     justify-content: center;
     margin-top: auto;
-  
+}
+
+.icon li a {
+    color: #ff4e37;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .icon li a i{
@@ -159,7 +140,6 @@ img {
     margin: 10px;
     padding: 10px;
     box-shadow: none;
-
 }
 
 .icon li a i:hover{
@@ -168,8 +148,7 @@ img {
 
 .compress-file{
     height: 290px;
-    padding: 20px;
-    
+    padding: 20px;  
 }
 
 [class*="col"]{
@@ -196,7 +175,7 @@ section {
 
 .range{
     height: 80px;
-    width: 600px;
+    width: 800px;
     background: #fff;
     border-radius: 10px;
     padding: 0 65px 0 45px;
@@ -389,11 +368,12 @@ ul li:last-child .fa::after{
     width: 500px;
     margin: 80px auto 0;
     background: #f5f5f5;
+    ;
 }
 
 .wrapper .accordio_wrap .accordio-header{
     width: 100%;
-    height: 50px;
+    height: 80px;
     background: #fff;
     padding: 15px;
     color: #FF725E;
@@ -493,22 +473,5 @@ ul li:last-child .fa::after{
 
 
 
-/* responsive*/
 
-
-@media (max-width: 850px){
-
-}
-
-
-@media (max-width: 600px) {
-
-   
-   
-  }
-  
-  @media (max-width: 560px) {
-
-
-  }
   
